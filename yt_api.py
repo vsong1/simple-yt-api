@@ -8,9 +8,9 @@ search_url = base_url + "/search"
 headers = {"part":"snippet",
   "key":key, 
   "type":"video", 
-  "q":"software"
+  "q":"software",
+  "maxResults":"1"
 }
 #api = Api(api_key=key)
 response = requests.get(search_url, headers)
 print(response.json())
-print("hello")
