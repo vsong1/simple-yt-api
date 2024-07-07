@@ -1,4 +1,5 @@
 # YouTube Search Results Calculator
+[![Check Style](https://github.com/vsong1/simple-yt-api/actions/workflows/style.yaml/badge.svg?event=push)](https://github.com/vsong1/simple-yt-api/actions/workflows/style.yaml)
 A Python application to calculate differences between a user's search results and base results.
 
 ## Setup
