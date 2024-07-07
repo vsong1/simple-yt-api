@@ -1,6 +1,6 @@
-### This simple script retrieves and prints a neat
-#   table of search results based on the entered 
-#   search query.
+# This simple script retrieves and prints a neat
+# table of search results based on the entered 
+# search query.
 
 import requests
 import os
@@ -30,10 +30,10 @@ engine = db.create_engine('sqlite:///query_result.db')
 query_dict.to_sql('results', con=engine, if_exists='replace', index=False)
 
 with engine.connect() as connection:
-   query_out = connection.execute(db.text('SELECT \
+    query_out = connection.execute(db.text('SELECT \
             "snippet.title" AS title, \
             "snippet.publishedAt" AS publishDate, \
             "snippet.channelTitle" AS channel, \
             "id.videoId" AS videoId \
             FROM results;')).fetchall()
-   print(pd.DataFrame(query_out))
+    print(pd.DataFrame(query_out))
